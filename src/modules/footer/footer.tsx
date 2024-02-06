@@ -1,9 +1,8 @@
 'use client';
 
 import { Layout } from '@/components/ui/layout';
-import viktor from '@/assets/footer.png'
+import viktor from '@/assets/footer.png';
 import Image from 'next/image';
-
 import React from 'react';
 
 export const Footer = () => {
@@ -11,10 +10,9 @@ export const Footer = () => {
     <footer className='flex justify-between w-full py-20 bg-black'>
       <Layout>
         <div className='grid grid-cols-2 items-center'>
-          <Image
-            src={viktor}
-            alt='viktor'
-          />
+          <div className='h-full'>
+            <Image className='w-full' src={viktor} alt='viktor' />
+          </div>
           <div className='flex gap-y-5 flex-col'>
             <div className='flex flex-row justify-center items-center gap-5'>
               <p className='text-xl lg:text-3xl text-white w-fit'>tg:</p>

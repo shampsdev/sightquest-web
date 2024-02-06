@@ -1,11 +1,33 @@
 import { Border } from '@/components/ui/border';
 import { Button } from '@/components/ui/button';
 import React, { useState } from 'react';
+import axios from 'axios';
 
 export const MailSender = () => {
   const [mail, setMail] = useState('');
+  const [sent, setSent] = useState(false);
 
-  const sendEmail = () => {};
+  const sendEmail = () => {
+    var options = {
+      method: 'POST',
+      url: 'https://sightquest.ru/api/subscribers/',
+      headers: {
+        'Content-Type': 'application/json',
+        'User-Agent': 'insomnia/8.6.0',
+      },
+      data: { email: mail },
+    };
+
+    axios
+      .request(options)
+      .then(function (response) {
+        console.log(response.data);
+        setSent(true);
+      })
+      .catch(function (error) {
+        console.error(error);
+      });
+  };
 
   return (
     <section className='gap-y-4 flex flex-col items-center'>
@@ -14,18 +36,23 @@ export const MailSender = () => {
       </h3>
 
       <Border className='flex items-center gap-x-4 lg:gap-x-12 w-max'>
-        <input
-          onChange={(e) => {
-            setMail(e.target.value);
-          }}
-          value={mail}
-          className='px-4 py-2 rounded-full'
-          placeholder='Введите свой email'
-        />
-
-        <Button className='text-lg px-8' onClick={sendEmail}>
-          Отправить
-        </Button>
+        {sent ? (
+          <p className='py-2 w-[30vw] px-8 text-center text-lg'>Спасибо!</p>
+        ) : (
+          <>
+            <input
+              onChange={(e) => {
+                setMail(e.target.value);
+              }}
+              value={mail}
+              className='px-4 py-2 rounded-full'
+              placeholder='Введите свой email'
+            />
+            <Button className='text-lg px-8' onClick={sendEmail}>
+              Отправить
+            </Button>
+          </>
+        )}
       </Border>
     </section>
   );
