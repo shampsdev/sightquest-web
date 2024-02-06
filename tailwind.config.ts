@@ -18,6 +18,9 @@ const config = {
       },
     },
     extend: {
+      backgroundImage: {
+        'saint-p': "url('./../assets/saint-p.jpg')",
+      },
       colors: {
         customPrimary: '#CDFF8D',
         customSecondary: '#4F4F4F',

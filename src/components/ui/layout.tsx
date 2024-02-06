@@ -9,7 +9,7 @@ type LayoutProps = {
 export const Layout = (props: LayoutProps) => {
   return (
     <div className={
-      twMerge('max-w-[1080] w-4/5 mx-auto', props.className)
+      twMerge('w-[98%] md:max-w-[1080px] md:w-4/5 mx-auto', props.className)
     }>
       { props.children }
     </div>
