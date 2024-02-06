@@ -11,7 +11,7 @@ export const Footer = () => {
       <Layout>
         <div className='grid grid-cols-1 xs:grid-cols-2 items-center'>
           <div className='h-full'>
-            <Image className='w-full' src={viktor} alt='viktor' />
+            <img src='https://i.imgur.com/hOFnzor.png' alt='viktor' />
           </div>
           <div className='flex gap-y-5 flex-col'>
             <div className='flex flex-row justify-center items-center gap-5'>

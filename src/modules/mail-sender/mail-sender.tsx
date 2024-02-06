@@ -14,6 +14,7 @@ export const MailSender = () => {
       headers: {
         'Content-Type': 'application/json',
         'User-Agent': 'insomnia/8.6.0',
+        'Access-Control-Allow-Origin': '*',
       },
       data: { email: mail },
     };
@@ -48,7 +49,10 @@ export const MailSender = () => {
               className='lg:w-96 px-4 py-2 rounded-full'
               placeholder='Введите свой email'
             />
-            <Button className='text-sm xs:text-lg px-2 xs:px-8' onClick={sendEmail}>
+            <Button
+              className='text-sm xs:text-lg px-2 xs:px-8'
+              onClick={sendEmail}
+            >
               Отправить
             </Button>
           </>

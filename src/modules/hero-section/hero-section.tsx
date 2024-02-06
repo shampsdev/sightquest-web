@@ -1,9 +1,5 @@
-import React from 'react'
-import Image from 'next/image'
-import viktor from '@/assets/viktor.png'
-import logo from '@/assets/logo.png'
-import { useParallax } from 'react-scroll-parallax'
-import { Layout } from '@/components/ui/layout'
+import React from 'react';
+import { Layout } from '@/components/ui/layout';
 
 export const HeroSection = () => {
   return (
@@ -11,19 +7,22 @@ export const HeroSection = () => {
       <Layout className='relative'>
         <div className='h-52'>
           <h1 className='text-4xl lg:text-5xl text-white'>
-            <label className='text-customPrimary'>Поиграй</label> с друзьями<br/>
-            в современные<br/> 
+            <label className='text-customPrimary'>Поиграй</label> с друзьями
+            <br />
+            в современные
+            <br />
             <label className='text-customPrimary'>догонялки</label>
           </h1>
 
-          <Image
+          <img
             className='absolute w-56 right-0 top-10'
-            src={viktor}
-            alt='viktor'
+            src='https://i.imgur.com/hOFnzor.png'
+            alt=''
           />
         </div>
         <p className='text-white w-64'>
-          Игра рассчитана на троих<br/> игроков, из них двое будут ловцами, <br/>а один — бегуном
+          Игра рассчитана на троих
+          <br /> игроков, из них двое будут ловцами, <br />а один — бегуном
         </p>
       </Layout>
       {/* <div className='relative mt-16 w-[900px] mx-auto'>
@@ -44,7 +43,6 @@ export const HeroSection = () => {
         className='mt-20 mx-auto w-56'
         alt='logo'
       /> */}
-
     </div>
-  )
-}
+  );
+};
