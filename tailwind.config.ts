@@ -19,6 +19,10 @@ const config = {
     },
     extend: {
       colors: {
+        customPrimary: '#CDFF8D',
+        customSecondary: '#4F4F4F',
+        customBackground: '#888BA8',
+        detail: '#D9D9D9',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -72,6 +76,9 @@ const config = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      fontFamily: {
+        custom: ['custom']
+      }
     },
   },
   plugins: [require("tailwindcss-animate")],

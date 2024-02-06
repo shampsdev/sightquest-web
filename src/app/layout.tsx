@@ -3,6 +3,8 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google"
 import { cn } from "@/lib/utils"
+import { Header } from "@/modules/header/header";
+import { Footer } from "@/modules/footer/footer";
 
 export const fontSans = FontSans({
   subsets: ["latin"],
@@ -26,11 +28,16 @@ export default function RootLayout({
       <head />
       <body
         className={cn(
-          "min-h-screen bg-background font-sans antialiased",
+          "min-h-screen bg-customSecondary font-sans antialiased",
           fontSans.variable
         )}
-      >
-        {children}
+      > 
+        <Header
+          items={['О проекте', 'Реализация', 'Протестировать']}
+          initialIndex={2}
+        />
+          {children}
+        <Footer/>
       </body>
     </html>
   );
