@@ -28,12 +28,23 @@ export default function RootLayout({
       <head />
       <body
         className={cn(
-          "min-h-screen bg-customSecondary font-sans antialiased",
+          "min-h-screen relative scroll-smooth bg-customSecondary font-sans antialiased",
           fontSans.variable
         )}
       > 
         <Header
-          items={['О проекте', 'Реализация', 'Протестировать']}
+          items={[{
+            title:'Бета тест',
+            to: '#form'
+        }, 
+        {
+          title:'О проекте',
+          to: '#about-project'
+        },
+        {
+          title: 'Реализация',
+          to: '#realization'
+        } ]}
           initialIndex={2}
         />
           {children}

@@ -18,9 +18,6 @@ const config = {
       },
     },
     extend: {
-      backgroundImage: {
-        'saint-p': "url('./../assets/saint-p.jpg')",
-      },
       screens: {
         'xs': '340px',
       },

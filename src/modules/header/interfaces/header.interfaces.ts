@@ -1,5 +1,10 @@
+type url = {
+  title: string;
+  to: string;
+}
+
 export type HeaderProps = {
-  items: string[];
+  items: url[];
   initialIndex: number;
   className?: string;
 } 

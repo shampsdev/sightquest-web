@@ -23,7 +23,7 @@ const values = [
 
 export const AboutProject = () => {
   return (
-    <section className='font-custom'>
+    <section id='about-project' className='font-custom'>
       <Layout>
         <h3 className='text-white mb-5 text-2xl lg:text-3xl opacity-75'>О проектe</h3>
         
@@ -35,7 +35,7 @@ export const AboutProject = () => {
                   { value.title }
                 </h4>
                 <ArrowIcon/>
-                <p className='text-center text-white'>{ value.description }</p>
+                <p className='text-center max-w-[320px] text-white'>{ value.description }</p>
               </li>
             ))
           }

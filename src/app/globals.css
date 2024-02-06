@@ -79,3 +79,7 @@
   font-family: 'custom';
   src: url('./../assets/FormaDJRCyrillicText-Regular.ttf');
 }
+
+html {
+  scroll-behavior: smooth;
+}

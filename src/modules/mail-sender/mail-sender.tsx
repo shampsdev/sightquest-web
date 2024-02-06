@@ -30,7 +30,7 @@ export const MailSender = () => {
   };
 
   return (
-    <section className='gap-y-4 flex flex-col items-center'>
+    <section id='form' className='gap-y-4 flex flex-col items-center'>
       <h3 className='lg:text-3xl text-lg text-center text-white'>
         Запись на лист ожидания <br /> на закрытое бета-тестирование.
       </h3>
