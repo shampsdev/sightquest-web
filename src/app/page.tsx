@@ -5,6 +5,7 @@ import { SegmentControl } from "@/components/ui/segment-control";
 import { AboutProject } from "@/modules/about-project/about-project";
 import { HeroSection } from "@/modules/hero-section/hero-section";
 import { MailSender } from "@/modules/mail-sender/mail-sender";
+import { Realization } from "@/modules/realization/realization";
 
 export default function Home() {
   return(
@@ -12,6 +13,7 @@ export default function Home() {
       <MailSender/>
       <HeroSection/>
       <AboutProject/>
+      <Realization/>
     </Layout>    
   )
 }

@@ -3,6 +3,8 @@ import { Layout } from '@/components/ui/layout'
 import React from 'react'
 import Image from 'next/image'
 import { Border } from '@/components/ui/border'
+import saintP from '@/assets/saint-p.jpg'
+import { ArrowBigIcon } from '@/assets/arrow-big.icon'
 
 const values = [
   {
@@ -23,7 +25,7 @@ export const AboutProject = () => {
   return (
     <section className='font-custom'>
       <Layout>
-        <h3 className='text-white text-3xl opacity-75'>О проектe</h3>
+        <h3 className='text-white mb-5 text-2xl lg:text-3xl opacity-75'>О проектe</h3>
         
         <ul className='flex flex-col lg:flex-row w-full gap-y-12 lg:gap-x-12 lg:w-max mx-auto'>
           {
@@ -38,14 +40,23 @@ export const AboutProject = () => {
             ))
           }
         </ul>
+        
+        <div className='mt-12 flex flex-col lg:flex-row lg:justify-around items-center'>
+          <div className='-translate-x-5 relative max-w-64 xs:max-w-[320px] lg:max-w-[560px]'>
+            <Image
+              className='w-64 xs:w-80 lg:w-[560px] left-0 rounded-[32px] lg:rounded-[40px]'
+              src={saintP}
+              alt='saintP'
+            />
 
-        <div className='bg-saint-p bg-no-repeat rounded-3xl w-96 justify-end flex'>
-          <Border className='rounded-3xl h-full w-1/2'>
-            <h4 className='font-bold'>Точки активности</h4>
-            <p className='text-sm mt-4'>
-              Достопримечательность, точка интереса, где нужно выполнить задание, например снять на фотографию. Эта фотография будет выслана остальным участникам
-            </p>
-          </Border>
+            <div className='absolute top-0 h-full -right-10 w-30 flex flex-col justify-around items-center rounded-2xl px-4 lg:px-8 bg-customPrimary'>
+              <h3 className='text-center lg:text-lg'>Точки активности</h3>
+
+              <p className='text-xs lg:text-md max-w-[120px] lg:max-w-[240px]'>
+                Достопримечательность, точка интереса, где нужно выполнить задание, например снять на фотографию. Эта фотография будет выслана остальным участникам
+              </p>
+            </div>
+          </div>
         </div>
       </Layout>
     </section>

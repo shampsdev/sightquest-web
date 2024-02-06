@@ -21,6 +21,9 @@ const config = {
       backgroundImage: {
         'saint-p': "url('./../assets/saint-p.jpg')",
       },
+      screens: {
+        'xs': '340px',
+      },
       colors: {
         customPrimary: '#CDFF8D',
         customSecondary: '#4F4F4F',

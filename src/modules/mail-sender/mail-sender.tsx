@@ -45,10 +45,10 @@ export const MailSender = () => {
                 setMail(e.target.value);
               }}
               value={mail}
-              className='px-4 py-2 rounded-full'
+              className='lg:w-96 px-4 py-2 rounded-full'
               placeholder='Введите свой email'
             />
-            <Button className='text-lg px-8' onClick={sendEmail}>
+            <Button className='text-sm xs:text-lg px-2 xs:px-8' onClick={sendEmail}>
               Отправить
             </Button>
           </>
