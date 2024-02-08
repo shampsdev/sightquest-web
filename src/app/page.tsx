@@ -9,7 +9,7 @@ import { Realization } from "@/modules/realization/realization";
 
 export default function Home() {
   return(
-    <Layout className='pt-32 flex flex-col gap-y-16 bg-customSecondary '>
+    <Layout className='md:pt-32 flex flex-col gap-y-16 bg-customSecondary '>
       <MailSender/>
       <HeroSection/>
       <AboutProject/>
