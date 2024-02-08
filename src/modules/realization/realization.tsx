@@ -26,7 +26,7 @@ export const Realization = () => {
           />
         </div>
 
-        <div className='-translate-x-5 relative max-w-[320px] lg:max-w-[400px] mx-auto'>
+        {/* <div className='-translate-x-5 relative max-w-[320px] lg:max-w-[400px] mx-auto'>
           <Image
             className='w-64 xs:w-80 lg:w-[400px] left-0 rounded-[32px] lg:rounded-[40px]'
             src={realization}
@@ -42,7 +42,7 @@ export const Realization = () => {
             <ArrowBigIcon />
             <p className='text-center'>Социализация</p>
           </div>
-        </div>
+        </div> */}
 
         <div className='pt-10'>
           <h3 className='text-center text-3xl text-white'>

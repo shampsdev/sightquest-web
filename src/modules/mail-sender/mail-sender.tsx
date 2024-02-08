@@ -30,14 +30,14 @@ export const MailSender = () => {
   };
 
   return (
-    <section id='form' className='gap-y-4 flex flex-col items-center'>
+    <section id='form' className='gap-y-4 flex flex-col items-center overflow-hidden'>
       <h3 className='lg:text-3xl text-lg text-center text-white'>
         Запись на лист ожидания <br /> на закрытое бета-тестирование.
       </h3>
 
       <Border className='flex items-center gap-x-4 lg:gap-x-12 w-max'>
         {sent ? (
-          <p className='py-2 w-[30vw] px-8 text-center text-lg'>Спасибо!</p>
+          <p className='py-2 min-w-[30vw] px-8 text-center text-lg'>Спасибо!</p>
         ) : (
           <>
             <input
@@ -48,7 +48,7 @@ export const MailSender = () => {
               className='lg:w-96 px-4 py-2 rounded-full'
               placeholder='Введите свой email'
             />
-            <Button className='text-sm xs:text-lg px-2 xs:px-8' onClick={sendEmail}>
+            <Button className='text-sm px-2' onClick={sendEmail}>
               Отправить
             </Button>
           </>

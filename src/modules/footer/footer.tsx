@@ -9,7 +9,7 @@ export const Footer = () => {
   return (
     <footer className='mt-12 flex justify-between w-full py-20 bg-black'>
       <Layout>
-        <div className='grid grid-cols-1 xs:grid-cols-2 items-center'>
+        <div className='grid grid-cols-1 xs:grid-cols-2 items-center gap-y-10'>
           <div className='h-full'>
             <Image className='w-full' src={viktor} alt='viktor' />
           </div>
