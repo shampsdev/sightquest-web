@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const useEmail = () => {
-  const sendEmail = (email: string) => {
+  const subscribeEmail = (email: string) => {
     const options = {
       method: 'POST',
       url: 'https://sightquest.ru/api/subscribers/',
@@ -22,6 +22,6 @@ const useEmail = () => {
   };
 
   return {
-    sendEmail,
+    subscribeEmail,
   };
 };
