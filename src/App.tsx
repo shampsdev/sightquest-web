@@ -8,7 +8,7 @@ import { Hero } from "./modules/hero"
 function App() {
   return (
     <main className="bg-bg">
-      <div className="min-h-screen max-w-[640px] w-[95%] mx-auto flex flex-col gap-y-12">
+      <div className="min-h-screen max-w-[640px] w-[95%] mx-auto flex flex-col gap-y-12 pt-12">
         <Hero/>
         <AboutProject/>
         <AppSection/>
