@@ -1,5 +1,3 @@
-import React from 'react'
-
 type ButtonProps = {
   children?: string;
   onClick?: () => void;
@@ -8,10 +6,10 @@ type ButtonProps = {
 export const Button = (props: ButtonProps) => {
   return (
     <button
-      className="bg-primary rounded-full px-6 py-4"
+      className="bg-primary rounded-full xs:px-6 xs:py-4 px-3 py-2"
       onClick={props.onClick}
     >
-      <span>{ props.children }</span>
+      <span className="xs:text-base text-sm">{ props.children }</span>
     </button>
   )
 }

@@ -1,7 +1,12 @@
 import { PersonCard, PersonCardProps } from "./person-card"
 import commandTitle from "@/assets/command.png"
 import mike from "@/assets/command/mike.jpg"
-import React from "react"
+import Flicking from "@egjs/react-flicking"
+import "@egjs/react-flicking/dist/flicking.css";
+import { useState } from "react";
+import './styles.css'
+import { Item } from "./item";
+import { useSwipeable } from "react-swipeable";
 
 const commands: PersonCardProps[] = [
   {
@@ -22,13 +27,15 @@ const commands: PersonCardProps[] = [
 
 
 export const AboutCommand = () => {
+  const [panels, setPanels] = useState([0, 1, 2, 3, 4]);
+
   return (
     <section className="bg-secondary-bg py-8">
       <img
         src={commandTitle}
       />
 
-      <div className="relative">
+      {/* <div className="relative">
         {
           commands.map((value, index) => <React.Fragment key={index}>
           <PersonCard
@@ -36,7 +43,7 @@ export const AboutCommand = () => {
           />
         </React.Fragment>)
         }
-      </div>
+      </div> */}
 
       <div className="flex text-bg justify-between">
         <p className="max-w-[60%]">Команда, которая создала это приложение, состоит из равного количества фронтэнденров и бекэндеров, а также дизайнера.  Вместе мы распределили задачи и старались выполнять их в срок. </p>

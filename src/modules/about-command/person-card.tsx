@@ -10,7 +10,7 @@ export type PersonCardProps = {
 
 export const PersonCard = (props: PersonCardProps) => {
   return (
-    <label className="text-primary absolute px-8">
+    <label className="text-primary px-8">
       <div className="relative">
         <img
           className="w-full h-full"

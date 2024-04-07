@@ -23,13 +23,13 @@ export const AboutProject = () => {
       <Title>
         О проекте
       </Title>
-      <p className="uppercase pt-4 text-secondary">
+      <p className="uppercase pt-4 text-secondary text-sm xs:text-base">
         Наш продукт был создан с целью<br/>
         найти решение существующим<br/>
         <span className="text-primary">проблемам 21 века.</span>
       </p>
 
-      <ul>
+      <ul className='pt-2'>
         { facts.map((fact, index) => <li key={index}>
           <Fact
             key={index}
@@ -40,11 +40,9 @@ export const AboutProject = () => {
       </ul>
 
       <img
-        className='mt-4'
+        className='mt-4 w-full'
         src={decorLine}
       />
-
-      <Title>Отслеживай свои результаты</Title>
     </section>
   )
 }
