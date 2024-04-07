@@ -1,8 +1,0 @@
-.flicking-panel {
-  width: 100px; /* Set the width of each panel */
-  height: 200px; /* Set the height of each panel */
-  background-color: #ccc; /* Set the background color of each panel */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}

@@ -1,9 +1,7 @@
 import { PersonCardProps } from "./person-card"
 import commandTitle from "@/assets/command.png"
 import mike from "@/assets/command/mike.jpg"
-import "@egjs/react-flicking/dist/flicking.css";
 import { useState } from "react";
-import './styles.css'
 
 const commands: PersonCardProps[] = [
   {
