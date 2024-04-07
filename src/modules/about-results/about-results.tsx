@@ -4,8 +4,6 @@ import { ResultOutput } from './components/result-output'
 import phone1 from "@/assets/phone_1.png"
 import phone2 from "@/assets/phone_2.png"
 import bgArrow from "@/assets/bg-arrow-2.svg"
-import bgSadSpb from "@/assets/bg-image-sad-sp.jpg"
-import bgPhone from "@/assets/bg-image-phone.jpg"
 
 export const AboutResults = () => {
   return (
@@ -27,9 +25,6 @@ export const AboutResults = () => {
         <img className="mx-auto z-10" src={phone1}/>
         <img className="mx-auto z-10" src={phone2}/>
       </div>
-
-      <img className="pt-12" src={bgSadSpb}/>
-      <img src={bgPhone}/>
     </section>
   )
 }

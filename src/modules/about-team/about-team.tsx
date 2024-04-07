@@ -21,7 +21,7 @@ const commands: PersonCardProps[] = [
 ]
 
 
-export const AboutCommand = () => {
+export const AboutTeam = () => {
   const [panels, setPanels] = useState([0, 1, 2, 3, 4]);
 
   return (

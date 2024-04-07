@@ -1,4 +1,4 @@
-import { AboutCommand } from "./modules/about-command/about-command"
+import { AboutTeam } from "./modules/about-team/about-team"
 import { AboutProject } from "./modules/about-project/about-project"
 import { AboutResults } from "./modules/about-results/about-results"
 import { AppSection } from "./modules/app-section"
@@ -13,7 +13,7 @@ function App() {
         <AboutProject/>
         <AppSection/>
         <AboutResults/>
-        <AboutCommand/>
+        <AboutTeam/>
         <Footer/>
       </div>
     </main>
