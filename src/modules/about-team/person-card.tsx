@@ -6,6 +6,7 @@ export type PersonCardProps = {
   name: string;
   surname: string;
   photo: string;
+  url: string;
 };
 
 export const PersonCard = (props: PersonCardProps) => {
@@ -31,9 +32,13 @@ export const PersonCard = (props: PersonCardProps) => {
           {props.surname}
         </p>
 
-        <button className='absolute right-10 bottom-10'>
+        <a
+          href={props.url}
+          target='_blank'
+          className='absolute right-10 bottom-10'
+        >
           <img className='scale-150' src={arrow} />
-        </button>
+        </a>
       </div>
     </label>
   );

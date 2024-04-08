@@ -1,28 +1,51 @@
 import { PersonCard, PersonCardProps } from './person-card';
 import commandTitle from '@/assets/command.png';
 import mike from '@/assets/command/mike.jpg';
+import mitya from '@/assets/command/mitya.jpg';
+import sanya from '@/assets/command/sanya.jpg';
+import vanya from '@/assets/command/vanya.jpg';
+import lilya from '@/assets/command/lilya.jpg';
 
 const team: PersonCardProps[] = [
   {
-    university: 'ИТМО',
+    university: 'НИУ ИТМО',
     amplua: 'Фронтенд',
     name: 'МИШЕЛЬ',
     surname: 'де ДЖОФРОЙ',
     photo: mike,
+    url: 'https://t.me/mikedegeofroy',
   },
   {
-    university: 'ИТМО',
+    university: 'НИУ ИТМО',
     amplua: 'Фронтенд',
     name: 'МИТЯ',
     surname: 'МАМЧЕНКО',
-    photo: mike,
+    photo: mitya,
+    url: 'https://t.me/aliasmityai',
   },
   {
-    university: 'ИТМО',
-    amplua: 'Фронтенд',
-    name: 'МИТЯ',
-    surname: 'МАМЧЕНКО',
-    photo: mike,
+    university: 'НИУ ИТМО',
+    amplua: 'Бэкенд',
+    name: 'САНЯ',
+    surname: 'ДЬЯКОНОВ',
+    photo: sanya,
+    url: 'https://t.me/keine_salz',
+  },
+  {
+    university: 'НИУ ИТМО',
+    amplua: 'Бэкенд',
+    name: 'ВАНЯ',
+    surname: 'ТАРАСОВ',
+    photo: vanya,
+    url: 'https://t.me/vaniog',
+  },
+  {
+    university: 'НИУ ВШЭ',
+    amplua: 'Дизайнер',
+    name: 'ЛИЛЯ',
+    surname: 'ЯФАРОВА',
+    photo: lilya,
+    url: 'https://t.me/liliiyyaf',
   },
 ];
 
@@ -31,7 +54,7 @@ export const AboutTeam = () => {
     <section className='bg-secondary-bg py-8 px-5 -mx-2'>
       <img src={commandTitle} />
 
-      <div className='flex overflow-x-scroll snap-x snap-mandatory my-10 gap-5 -mx-5'>
+      <div className='flex overflow-x-scroll snap-x snap-mandatory my-10 gap-5 -mx-5 no-scrollbar'>
         {team.map((value, index) => (
           <div
             className='snap-center w-5/6 px-5'

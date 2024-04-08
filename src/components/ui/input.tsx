@@ -19,7 +19,7 @@ function Input(props: InputProps) {
       placeholder={props.placeholder}
       value={props.text}
       onChange={props.onChange}
-      disabled={true}
+      disabled={props.disabled}
     />
   );
 }
