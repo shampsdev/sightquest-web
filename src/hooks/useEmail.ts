@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const useEmail = () => {
+export const useEmail = () => {
   const subscribeEmail = (email: string) => {
     const options = {
       method: 'POST',
