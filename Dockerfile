@@ -23,8 +23,8 @@ COPY --from=build-stage /app/dist /usr/share/nginx/html
 
 COPY nginx.conf /etc/nginx/nginx.conf
 
-# Expose port 80 to access the container
-EXPOSE 80
+# Expose port 3000 to access the container
+EXPOSE 3000
 
 # Start Nginx server
 CMD ["nginx", "-g", "daemon off;"]
