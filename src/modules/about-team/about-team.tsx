@@ -5,6 +5,7 @@ import mitya from '@/assets/command/mitya.jpg';
 import sanya from '@/assets/command/sanya.jpg';
 import vanya from '@/assets/command/vanya.jpg';
 import lilya from '@/assets/command/lilya.jpg';
+import zenya from '@/assets/command/zenya.jpg';
 
 const team: PersonCardProps[] = [
   {
@@ -46,6 +47,14 @@ const team: PersonCardProps[] = [
     surname: 'ЯФАРОВА',
     photo: lilya,
     url: 'https://t.me/liliiyyaf',
+  },
+  {
+    university: 'SETU Carlow',
+    amplua: 'Фронтенд',
+    name: 'ЖЕНЯ',
+    surname: 'САЛЬНИКОВ',
+    photo: zenya,
+    url: 'https://t.me/evsalik',
   },
 ];
 
