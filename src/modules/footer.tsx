@@ -17,17 +17,8 @@ export const Footer = () => {
         <div className='text-secondary text-center text-xl'>
           <h3>Наш телеграм канал:</h3>
           <h3>
-            <a href='https://t.me/shampiniony' target='_blank'>
-              @shampiniony
-            </a>
-          </h3>
-        </div>
-
-        <div className='text-secondary text-center text-xl'>
-          <h3>Наши контакты:</h3>
-          <h3>
-            <a href='https://t.me/officialshampiniony' target='_blank'>
-              @officialshampiniony
+            <a href='https://t.me/shampsdev' target='_blank'>
+              @shampsdev
             </a>
           </h3>
         </div>

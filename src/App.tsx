@@ -1,9 +1,11 @@
 import { AboutTeam } from "./modules/about-team/about-team"
-import { AboutProject } from "./modules/about-project/about-project"
 import { AboutResults } from "./modules/about-results/about-results"
 import { AppSection } from "./modules/app-section"
 import { Footer } from "./modules/footer"
 import { Hero } from "./modules/hero"
+import { PriceSection } from "./modules/price-section"
+import { AboutProject } from "./modules/about-project/about-project"
+import { AboutTech } from "./modules/about-tech/about-tech"
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
         <AboutProject/>
         <AppSection/>
         <AboutResults/>
+        <AboutTech/>
+        <PriceSection/>
         <AboutTeam/>
         <Footer/>
       </div>

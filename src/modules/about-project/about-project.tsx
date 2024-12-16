@@ -1,6 +1,6 @@
 import { Title } from '@/components/ui/title'
-import { Fact, FactProps } from './fact'
 import decorLine from "@/assets/decor-line.svg"
+import { Fact, FactProps } from './fact'
 
 const facts: FactProps[] = [
   {
