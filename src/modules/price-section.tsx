@@ -17,7 +17,7 @@ export const PriceSection = () => {
                 <div className="font-light flex h-fit gap-4">
                     <div className="w-full relative bg-[#555555] rounded-3xl overflow-hidden">
                         <p className="absolute top-4 left-4 text-xl xs:text-6xl text-primary">
-                            <span className="xs:text-4xl">от</span> 150 ₽
+                            150 ₽
                         </p>
 
                         <img
@@ -35,7 +35,7 @@ export const PriceSection = () => {
                             className="aspect-[3/2] relative col-start-2 row-start-1 bg-[#555555] rounded-3xl overflow-hidden"
                         >
                             <p className="absolute top-4 left-4 text-xl xs:text-6xl text-primary">
-                                <span className="xs:text-4xl">от</span> 250 ₽
+                                250 ₽
                             </p>
 
                             <img
@@ -51,7 +51,7 @@ export const PriceSection = () => {
                             className="bg-[#555555] aspect-[3/2] relative rounded-3xl overflow-hidden"
                         >
                             <p className="absolute top-4 left-4 text-xl xs:text-6xl text-primary">
-                                <span className="xs:text-4xl">от</span> 400 ₽
+                                400 ₽
                             </p>
 
                             <img
@@ -64,9 +64,6 @@ export const PriceSection = () => {
                             </p>
                         </div>
                     </div>
-                    <p className="absolute left-0 bottom-2 text-primary xs:text-lg">
-                        *При релизе цены могут отличаться
-                    </p>
                 </div>
             </div>
         </section>
